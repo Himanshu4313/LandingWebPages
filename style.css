@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#02021f;
+    color: #fff;
+}
+
+/* HEADER SECTION CSS STYLE */
+.header-section{
+    padding: 10px 0px 10px 0px;
+    position: sticky;
+    top: 0px;
+    background-color:#02021f
+}
+
+.navbar-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.hambrger-icon {
+    padding-left: 45px;
+}
+.hambrger-icon > img {
+     width: 2vw;
+     display: none;
+}
+.navbar-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container ul li{
+    list-style: none;
+    padding: 10px 30px 10px 30px;
+}
+
+.navbar-container ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-container ul li a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN SECTION CSS */
+
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hii-image > img{
+      width: 2.5vw;
+
+}
+.left-side-of-main-section h1 span{
+    color: #ffc400;
+    font-weight: 300;
+}
+
+.desktop-image > img {
+    width:30vw;
+
+}
+
+/* PROJECT SECTION */
+
+.project-section > h1{
+   
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    font-weight: 500;   
+    text-decoration: underline;
+    text-decoration-color:#0000ff ;
+    text-decoration-thickness:4px;
+    cursor: pointer;
+}
+
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-image-container div img{
+    width:20vw;
+}
+
+.projectImage-first-line  p {
+    text-align: center;
+}
+
+.projectImage-second-line p{
+    text-align: center;
+}
+
+/* Footer section */
+
+.footer-section h1{
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    font-weight: 300;   
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color:#0000ff ;
+    text-decoration-thickness:4px;
+    cursor: pointer;
+         
+}
+
+.icon-image{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.icon-image div{
+
+    padding: 15px;
+
+}
+.icon-image div img{
+    width: 2vw;
+    cursor: pointer;
+    transition: width 0.5s ;
+    transition-timing-function: ease-out;
+}
+
+.icon-image div img:hover{
+    width: 2.5vw;
+}
+
+
+/* MEDIA QUERIES START FROM HERE */
+
+/*  MEDIA QUERIES FOR SMALL DEVICE */
+ @media screen and (max-width: 600px) {
+    body{
+        background-color:#02021f;
+    }
+    .hambrger-icon {
+        padding-left:30px ;
+    }
+    .hambrger-icon > img{
+        display: block;
+        width: 4vw;
+        
+        
+    }
+    .navbar-container ul li a{
+        display: none;
+    }
+ 
+    .main-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hii-image > img {
+        width: 10vw;
+    }
+
+    .hii-image{
+          text-align: center;
+    }
+
+    .left-side-of-main-section h1 span {
+        color: #ffc400;
+        font-weight: 300;
+        /* text-align: center; */
+        padding-left: 46px;
+}
+.desktop-image > img {
+    width: 65vw;
+}
+
+.project-image-container {
+  
+    flex-direction: column;
+}
+
+.project-image-container div img {
+    width: 45vw;
+}
+.icon-image div img {
+    width: 10vw;
+   
+
+ }
+}
+/* MEDIA QUERIES FOR LARGE DEVICE */
+@media screen and (min-width: 600px) {
+    body{
+        background-color: #02021f;
+    }
+
+   
+}
+
+/* MEDIA QUERIES FOR TABLET */
+@media screen and (min-width: 768px){
+    body{
+        background-color:#02021f;
+    }
+    
+}
+
+/* MEDIA QUERIES FOR LAPTOP / DESKTOP */
+
+@media screen  and ( min-width: 992px ){
+    body{
+        background-color:#02021f;
+    }
+}
+
+/* MEDIA QUERIES FOR LARGE LAPTOP / DESKTOP */
+
+@media screen  and ( min-width:1200px){
+    body{
+        background-color:#02021f;
+    }   
+}
+
+
